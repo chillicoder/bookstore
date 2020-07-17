@@ -15,7 +15,7 @@ func ConnectDatabase() {
 	var connection_string, exists = os.LookupEnv("DB_URL")
 
 	if !exists {
-		connection_string = "bookstore:bookstorepwd1@localhost:3306/bookstore_db?charset=utf8&parseTime=True"
+		connection_string = "masterbuilderusr:masterbuilderpwd8342@(masterbuilder-backend-aurora-db-cluster.cluster-cyvdcg4q9tne.ca-central-1.rds.amazonaws.com:3306)/masterbuilder_db?charset=utf8&parseTime=True"
 	}
 
 	log.Print(connection_string)
